@@ -1,0 +1,10 @@
+OTP sent: 887081
+Payment to Book Store declined
+Wrong PIN for payment to Grocery Mart
+credit 500 Card
+debit 180 Coffee Corner
+debit 420 Pharmacy
+Cashback on 420: 8.4
+Gateway check: False
+Final balance: Rs. 1900.0
+Total credited: 2500
