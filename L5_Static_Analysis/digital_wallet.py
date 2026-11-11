@@ -1,4 +1,4 @@
-"""Digital wallet and payment tracker: top-up, pay merchants, statement, cashback."""
+"""Digital wallet and payment tracker: top-up, pay, statement, cashback."""
 import hashlib
 import hmac
 import os
@@ -89,8 +89,12 @@ def main():
     pay_merchant("Pharmacy", 420, "4321")
     mini_statement()
     print("Cashback on 420:", cashback_for(420))
-    print("Gateway check:", check_gateway("wrong")) # should be False
+    print("Gateway check:", check_gateway("wrong"))  # should be False
     print("Final balance: Rs.", wallet["balance"])
-    credit_amounts=[t["amount"] for t in transactions if t["type"] == "credit"]
-    print("Total credited:",sum(credit_amounts))
-main()
+    credit_amounts = [
+        t["amount"] for t in transactions if t["type"] == "credit"]
+    print("Total credited:", sum(credit_amounts))
+
+
+if __name__ == "__main__":
+    main()
