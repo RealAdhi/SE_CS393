@@ -1,0 +1,12 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.3.4, pluggy-1.5.0 -- C:\Users\adhithya\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\python.exe
+hypothesis profile 'default'
+rootdir: C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing
+plugins: anyio-4.12.0, hypothesis-6.170.15, cov-7.1.0
+collecting ... collected 3 items
+
+test_thermostat_control.py::test_parse_setpoint_no_crash PASSED          [ 33%]
+test_thermostat_control.py::test_average_temperature_no_crash PASSED     [ 66%]
+test_thermostat_control.py::test_schedule_slot_no_crash PASSED           [100%]
+
+============================== 3 passed in 8.57s ==============================

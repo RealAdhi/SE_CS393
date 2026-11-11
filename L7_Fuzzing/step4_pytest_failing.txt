@@ -1,0 +1,27 @@
+    |     parse_setpoint(s)
+    |     assert False, f"parse_setpoint crashed with: {e!r} on input {s!r}"
+    | AssertionError: parse_setpoint crashed with: ValueError("could not convert string to float: ''") on input ''
+    |     s='',
+    |     parse_setpoint(s)
+    |     assert False, f"parse_setpoint crashed with: {e!r} on input {s!r}"
+    | AssertionError: parse_setpoint crashed with: TypeError("'NoneType' object is not subscriptable") on input None
+    |     s=None,  # or any other generated value
+    |     assert False, f"average_temperature crashed with: {e!r} on input {s!r}"
+    | AssertionError: average_temperature crashed with: ValueError("could not convert string to float: ''") on input ''
+    |     s='',
+    |     assert False, f"average_temperature crashed with: {e!r} on input {s!r}"
+    | AssertionError: average_temperature crashed with: AttributeError("'NoneType' object has no attribute 'split'") on input None
+    |     s=None,
+    |     assert False, f"schedule_slot crashed with: {e!r} on input {s!r}"
+    | AssertionError: schedule_slot crashed with: ValueError("invalid literal for int() with base 10: ''") on input ':'
+    |     s=':',
+    |     assert False, f"schedule_slot crashed with: {e!r} on input {s!r}"
+    | AssertionError: schedule_slot crashed with: ValueError('not enough values to unpack (expected 2, got 1)') on input ''
+    |     s='',  # or any other generated value
+    |     assert False, f"schedule_slot crashed with: {e!r} on input {s!r}"
+    | AssertionError: schedule_slot crashed with: AttributeError("'NoneType' object has no attribute 'split'") on input None
+    |     s=None,  # or any other generated value
+FAILED test_thermostat_control.py::test_parse_setpoint_no_crash - ExceptionGr...
+FAILED test_thermostat_control.py::test_average_temperature_no_crash - Except...
+FAILED test_thermostat_control.py::test_schedule_slot_no_crash - ExceptionGro...
+============================= 3 failed in 18.77s ==============================

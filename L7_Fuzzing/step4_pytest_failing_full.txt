@@ -1,0 +1,372 @@
+============================= test session starts =============================
+platform win32 -- Python 3.12.10, pytest-8.3.4, pluggy-1.5.0
+rootdir: C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before
+plugins: anyio-4.12.0, hypothesis-6.170.15, cov-7.1.0
+collected 3 items
+
+test_thermostat_control.py FFF                                           [100%]
+
+================================== FAILURES ===================================
+________________________ test_parse_setpoint_no_crash _________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 341, in from_call
+  |     result: TResult | None = func()
+  |                              ^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 242, in <lambda>
+  |     lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_hooks.py", line 513, in __call__
+  |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_manager.py", line 120, in _hookexec
+  |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 182, in _multicall
+  |     return outcome.get_result()
+  |            ^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_result.py", line 100, in get_result
+  |     raise exc.with_traceback(exc.__traceback__)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\threadexception.py", line 92, in pytest_runtest_call
+  |     yield from thread_exception_runtest_hook()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\threadexception.py", line 68, in thread_exception_runtest_hook
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\unraisableexception.py", line 95, in pytest_runtest_call
+  |     yield from unraisable_exception_runtest_hook()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\unraisableexception.py", line 70, in unraisable_exception_runtest_hook
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\logging.py", line 846, in pytest_runtest_call
+  |     yield from self._runtest_for(item, "call")
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\logging.py", line 829, in _runtest_for
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\capture.py", line 880, in pytest_runtest_call
+  |     return (yield)
+  |             ^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\skipping.py", line 257, in pytest_runtest_call
+  |     return (yield)
+  |             ^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 103, in _multicall
+  |     res = hook_impl.function(*args)
+  |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+  |     item.runtest()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\python.py", line 1627, in runtest
+  |     self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_hooks.py", line 513, in __call__
+  |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_manager.py", line 120, in _hookexec
+  |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 139, in _multicall
+  |     raise exception.with_traceback(exception.__traceback__)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 103, in _multicall
+  |     res = hook_impl.function(*args)
+  |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+  |     result = testfunction(**testargs)
+  |              ^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 6, in test_parse_setpoint_no_crash
+  |     def test_parse_setpoint_no_crash(s):
+  |                    ^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\hypothesis\core.py", line 2334, in wrapped_test
+  |     raise the_error_hypothesis_found
+  | ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 8, in test_parse_setpoint_no_crash
+    |     parse_setpoint(s)
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\thermostat_control.py", line 2, in parse_setpoint
+    |     value = float(text[:-1])
+    |             ^^^^^^^^^^^^^^^^
+    | ValueError: could not convert string to float: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 10, in test_parse_setpoint_no_crash
+    |     assert False, f"parse_setpoint crashed with: {e!r} on input {s!r}"
+    | AssertionError: parse_setpoint crashed with: ValueError("could not convert string to float: ''") on input ''
+    | assert False
+    | Failing test case: test_parse_setpoint_no_crash(
+    |     s='',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 8, in test_parse_setpoint_no_crash
+    |     parse_setpoint(s)
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\thermostat_control.py", line 2, in parse_setpoint
+    |     value = float(text[:-1])
+    |                   ~~~~^^^^^
+    | TypeError: 'NoneType' object is not subscriptable
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 10, in test_parse_setpoint_no_crash
+    |     assert False, f"parse_setpoint crashed with: {e!r} on input {s!r}"
+    | AssertionError: parse_setpoint crashed with: TypeError("'NoneType' object is not subscriptable") on input None
+    | assert False
+    | Failing test case: test_parse_setpoint_no_crash(
+    |     s=None,
+    | )
+    +------------------------------------
+______________________ test_average_temperature_no_crash ______________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 341, in from_call
+  |     result: TResult | None = func()
+  |                              ^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 242, in <lambda>
+  |     lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_hooks.py", line 513, in __call__
+  |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_manager.py", line 120, in _hookexec
+  |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 182, in _multicall
+  |     return outcome.get_result()
+  |            ^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_result.py", line 100, in get_result
+  |     raise exc.with_traceback(exc.__traceback__)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\threadexception.py", line 92, in pytest_runtest_call
+  |     yield from thread_exception_runtest_hook()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\threadexception.py", line 68, in thread_exception_runtest_hook
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\unraisableexception.py", line 95, in pytest_runtest_call
+  |     yield from unraisable_exception_runtest_hook()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\unraisableexception.py", line 70, in unraisable_exception_runtest_hook
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\logging.py", line 846, in pytest_runtest_call
+  |     yield from self._runtest_for(item, "call")
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\logging.py", line 829, in _runtest_for
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\capture.py", line 880, in pytest_runtest_call
+  |     return (yield)
+  |             ^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\skipping.py", line 257, in pytest_runtest_call
+  |     return (yield)
+  |             ^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 103, in _multicall
+  |     res = hook_impl.function(*args)
+  |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+  |     item.runtest()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\python.py", line 1627, in runtest
+  |     self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_hooks.py", line 513, in __call__
+  |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_manager.py", line 120, in _hookexec
+  |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 139, in _multicall
+  |     raise exception.with_traceback(exception.__traceback__)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 103, in _multicall
+  |     res = hook_impl.function(*args)
+  |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+  |     result = testfunction(**testargs)
+  |              ^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 14, in test_average_temperature_no_crash
+  |     def test_average_temperature_no_crash(s):
+  |                    ^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\hypothesis\core.py", line 2334, in wrapped_test
+  |     raise the_error_hypothesis_found
+  | ExceptionGroup: Hypothesis found 2 distinct failures. (2 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 16, in test_average_temperature_no_crash
+    |     average_temperature(s)
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\thermostat_control.py", line 8, in average_temperature
+    |     values = [float(r) for r in readings_csv.split(',')]
+    |               ^^^^^^^^
+    | ValueError: could not convert string to float: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 18, in test_average_temperature_no_crash
+    |     assert False, f"average_temperature crashed with: {e!r} on input {s!r}"
+    | AssertionError: average_temperature crashed with: ValueError("could not convert string to float: ''") on input ''
+    | assert False
+    | Failing test case: test_average_temperature_no_crash(
+    |     s='',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 16, in test_average_temperature_no_crash
+    |     average_temperature(s)
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\thermostat_control.py", line 8, in average_temperature
+    |     values = [float(r) for r in readings_csv.split(',')]
+    |                                 ^^^^^^^^^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'split'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 18, in test_average_temperature_no_crash
+    |     assert False, f"average_temperature crashed with: {e!r} on input {s!r}"
+    | AssertionError: average_temperature crashed with: AttributeError("'NoneType' object has no attribute 'split'") on input None
+    | assert False
+    | Failing test case: test_average_temperature_no_crash(
+    |     s=None,
+    | )
+    +------------------------------------
+_________________________ test_schedule_slot_no_crash _________________________
+  + Exception Group Traceback (most recent call last):
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 341, in from_call
+  |     result: TResult | None = func()
+  |                              ^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 242, in <lambda>
+  |     lambda: runtest_hook(item=item, **kwds), when=when, reraise=reraise
+  |             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_hooks.py", line 513, in __call__
+  |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_manager.py", line 120, in _hookexec
+  |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 182, in _multicall
+  |     return outcome.get_result()
+  |            ^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_result.py", line 100, in get_result
+  |     raise exc.with_traceback(exc.__traceback__)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\threadexception.py", line 92, in pytest_runtest_call
+  |     yield from thread_exception_runtest_hook()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\threadexception.py", line 68, in thread_exception_runtest_hook
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\unraisableexception.py", line 95, in pytest_runtest_call
+  |     yield from unraisable_exception_runtest_hook()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\unraisableexception.py", line 70, in unraisable_exception_runtest_hook
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\logging.py", line 846, in pytest_runtest_call
+  |     yield from self._runtest_for(item, "call")
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\logging.py", line 829, in _runtest_for
+  |     yield
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\capture.py", line 880, in pytest_runtest_call
+  |     return (yield)
+  |             ^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 167, in _multicall
+  |     teardown.throw(outcome._exception)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\skipping.py", line 257, in pytest_runtest_call
+  |     return (yield)
+  |             ^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 103, in _multicall
+  |     res = hook_impl.function(*args)
+  |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\runner.py", line 174, in pytest_runtest_call
+  |     item.runtest()
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\python.py", line 1627, in runtest
+  |     self.ihook.pytest_pyfunc_call(pyfuncitem=self)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_hooks.py", line 513, in __call__
+  |     return self._hookexec(self.name, self._hookimpls.copy(), kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_manager.py", line 120, in _hookexec
+  |     return self._inner_hookexec(hook_name, methods, kwargs, firstresult)
+  |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 139, in _multicall
+  |     raise exception.with_traceback(exception.__traceback__)
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pluggy\_callers.py", line 103, in _multicall
+  |     res = hook_impl.function(*args)
+  |           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\_pytest\python.py", line 159, in pytest_pyfunc_call
+  |     result = testfunction(**testargs)
+  |              ^^^^^^^^^^^^^^^^^^^^^^^^
+  |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 22, in test_schedule_slot_no_crash
+  |     def test_schedule_slot_no_crash(s):
+  |                    ^^^
+  |   File "C:\Users\adhithya\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\hypothesis\core.py", line 2334, in wrapped_test
+  |     raise the_error_hypothesis_found
+  | ExceptionGroup: Hypothesis found 3 distinct failures. (3 sub-exceptions)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 24, in test_schedule_slot_no_crash
+    |     schedule_slot(s)
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\thermostat_control.py", line 13, in schedule_slot
+    |     hour = int(hour)
+    |            ^^^^^^^^^
+    | ValueError: invalid literal for int() with base 10: ''
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 26, in test_schedule_slot_no_crash
+    |     assert False, f"schedule_slot crashed with: {e!r} on input {s!r}"
+    | AssertionError: schedule_slot crashed with: ValueError("invalid literal for int() with base 10: ''") on input ':'
+    | assert False
+    | Failing test case: test_schedule_slot_no_crash(
+    |     s=':',
+    | )
+    +---------------- 2 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 24, in test_schedule_slot_no_crash
+    |     schedule_slot(s)
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\thermostat_control.py", line 12, in schedule_slot
+    |     hour, minute = time_text.split(':')
+    |     ^^^^^^^^^^^^
+    | ValueError: not enough values to unpack (expected 2, got 1)
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 26, in test_schedule_slot_no_crash
+    |     assert False, f"schedule_slot crashed with: {e!r} on input {s!r}"
+    | AssertionError: schedule_slot crashed with: ValueError('not enough values to unpack (expected 2, got 1)') on input ''
+    | assert False
+    | Failing test case: test_schedule_slot_no_crash(
+    |     s='',
+    | )
+    +---------------- 3 ----------------
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 24, in test_schedule_slot_no_crash
+    |     schedule_slot(s)
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\thermostat_control.py", line 12, in schedule_slot
+    |     hour, minute = time_text.split(':')
+    |                    ^^^^^^^^^^^^^^^
+    | AttributeError: 'NoneType' object has no attribute 'split'
+    | 
+    | During handling of the above exception, another exception occurred:
+    | 
+    | Traceback (most recent call last):
+    |   File "C:\Users\adhithya\AppData\Local\Temp\claude\d7c4855a9c206ba1\d9cc6970-0377-4ee1-af50-cf814dbee6af\scratchpad\SE_CS393\L7_Fuzzing\before\test_thermostat_control.py", line 26, in test_schedule_slot_no_crash
+    |     assert False, f"schedule_slot crashed with: {e!r} on input {s!r}"
+    | AssertionError: schedule_slot crashed with: AttributeError("'NoneType' object has no attribute 'split'") on input None
+    | assert False
+    | Failing test case: test_schedule_slot_no_crash(
+    |     s=None,
+    | )
+    +------------------------------------
+=========================== short test summary info ===========================
+FAILED test_thermostat_control.py::test_parse_setpoint_no_crash - ExceptionGr...
+FAILED test_thermostat_control.py::test_average_temperature_no_crash - Except...
+FAILED test_thermostat_control.py::test_schedule_slot_no_crash - ExceptionGro...
+============================== 3 failed in 7.21s ==============================
